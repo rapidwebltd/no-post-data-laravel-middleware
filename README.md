@@ -7,5 +7,5 @@
 3. Add `\RapidWeb\NoPostDataLaravelMiddleware\Http\Middleware\NoPostData::class,` to the `middleware` array in your `app/Http/Kernel.php` file. 
 This must be added after `\Illuminate\View\Middleware\ShareErrorsFromSession::class,` and before `\App\Http\Middleware\VerifyCsrfToken::class,`.
 4. Run `php artisan vendor:publish`.
-5. If you wish, edit the `errorMessage` variable in your newly published `config/nopostdata.php` file.
-
+5. If you wish, edit the default `errorMessage` variable in your newly published `config/nopostdata.php` file.
+6. If you want to fully change the middleware's behaviour, you can also edit the `closure` variable found in the `config/nopostdata.php` file.
