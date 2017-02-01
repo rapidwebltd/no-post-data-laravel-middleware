@@ -1,0 +1,17 @@
+{
+    "name": "rapidwebltd/no-post-data-laravel-middleware",
+    "type": "library",
+    "description": "No Post Data Laravel Middleware",
+    "keywords": ["post", "Laravel", "middleware", "post data", "no post data middleware"],
+    "homepage": "https://github.com/rapidwebltd/no-post-data-laravel-middleware",
+    "license": "LGPL3",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "RapidWeb\\NoPostDataLaravelMiddleware\\": "src/"
+        }
+    }
+}
