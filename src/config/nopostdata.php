@@ -2,6 +2,6 @@
 
 return [
 
-    'errorMessage' => 'An error occurred processing your request. You may be a file which is too large.'
+    'errorMessage' => 'An error occurred processing your request. You may be uploading a file which is too large.'
 
 ];
