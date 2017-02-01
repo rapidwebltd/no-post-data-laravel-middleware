@@ -1,6 +1,6 @@
 <?php
 
-namespace RapidWeb\NoPostDataLaravelMiddleware\Http\Providers;
+namespace RapidWeb\NoPostDataLaravelMiddleware;
 
 class ServiceProvider extends Illuminate\Support\ServiceProvider
 {
