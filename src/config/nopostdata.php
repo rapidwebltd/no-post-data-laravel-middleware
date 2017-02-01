@@ -6,7 +6,7 @@ return [
     'errorMessage' => 'An error occurred processing your request. You may be uploading a file which is too large.',
 
     // If you wish to change the default behavior of redirecting back with an error, you can do so by changing the closure below.
-    'closure' => function(Request $request, Closure $next) {
+    'closure' => function(\Illuminate\Http\Request $request, \Closure $next) {
         return redirect()->back()->withInput()->withErrors(['no_post_data' => config('nopostdata.errorMessage')]);
     }
 
