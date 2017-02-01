@@ -2,9 +2,7 @@
 
 namespace RapidWeb\NoPostDataLaravelMiddleware\Http\Providers;
 
-use Illuminate\Support\ServiceProvider;
-
-class ServiceProvider extends ServiceProvider
+class ServiceProvider extends Illuminate\Support\ServiceProvider
 {
     /**
      * Bootstrap any application services.
