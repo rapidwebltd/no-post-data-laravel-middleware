@@ -23,7 +23,7 @@ class NoPostData
      */
     public function handle(Request $request, Closure $next)
     {
-        $errorMessage = config('errorMessage');
+        $errorMessage = config('nopostdata.errorMessage');
 
         if ($request->isMethod('post') && !count($request->all())) {
             return redirect()->back()->withInput()->withErrors(['no_post_data' => $errorMessage]);

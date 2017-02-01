@@ -12,7 +12,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/NoPostData.php' => config_path('NoPostData.php'),
+            __DIR__.'/config/nopostdata.php' => config_path('nopostdata.php'),
         ]);
     }
 
@@ -24,7 +24,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/NoPostData.php', 'NoPostData'
+            __DIR__.'/config/nopostdata.php', 'nopostdata'
         );
     }
 }
