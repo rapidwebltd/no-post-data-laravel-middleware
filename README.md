@@ -5,7 +5,7 @@ file beyond the size limits set in the web server's configuration.
 
 Laravel does not handle this situation and may end up throwing a somewhat confusing `TokenMismatchException in VerifyCsrfToken` due to CSRF protection.
 
-The 'No Post Data Laravel Middleware' handles situations in which a request a post request has been submitted and contains no post data - a situation 
+The 'No Post Data Laravel Middleware' handles situations in which a post request has been submitted and contains no post data - a situation 
 which should not occur under normal usage. By default, the middleware will redirect back to the previous page with an error message flashed to the 
 session. This can then be output on your view as you would normally handle validation errors.
 
